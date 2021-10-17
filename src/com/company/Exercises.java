@@ -149,4 +149,30 @@ public class Exercises {
         System.out.println("Double: [" + min_double + ", " + max_double + "]");
         System.out.println("Float: [" + min_float + ", " + max_float + "]");
     }
+
+    public static boolean is_prime_number(long num) {
+        long counter = num - 1;
+        boolean is_prime_number = num > 1;
+        while ((counter > 1) && (is_prime_number)) {
+            if (num % counter == 0) {
+                return false;
+            }
+            counter -= 1;
+        }
+        return true;
+    }
+
+    public static void fermat_numbers() {
+        for (double i = 1.0; i <= Long.MAX_VALUE; i ++) {
+            long fermat = (long) Math.pow(2.0, Math.pow(2.0, i)) + 1;
+            if ((fermat < Long.MAX_VALUE)&&(fermat > 0)) {
+                System.out.println("In range, calculating: ");
+                if (is_prime_number(fermat)) {
+                    System.out.println(i + " - A prime number, the number is: " + fermat);
+                } else {
+                    System.out.println(i + " - Not a prime number");
+                }
+            }
+        }
+    }
 }
