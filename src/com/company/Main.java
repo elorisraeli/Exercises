@@ -2,7 +2,6 @@ package com.company;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
 public class Main {
 
@@ -91,8 +90,21 @@ public class Main {
 //        Exercises.exercise10();
 //        Exercises.exercise11();
 //        Exercises.exercise12();
-        Exercises.fermat_numbers();
+//        Exercises.fermat_numbers();
+
+//        int x = MyConsole.readInt("Enter a number: ");
+//        System.out.println(x);
+//        String y = MyConsole.readString("Enter a string: ");
+//        System.out.println(y);
+
+//        Exercises.month_generator();
+//        Exercises.Exercise2_1();
+//        Exercises.Exercise2_2();
+//        Exercises.Exercise2_3();
+//        Exercises.Exercise2_4();
+//        Exercises.Exercise2_5();
+        Exercises.Exercise2_6();
+
+
     }
-
-
 }
