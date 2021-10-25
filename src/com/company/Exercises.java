@@ -301,7 +301,7 @@ public class Exercises {
     }
 
     // smallest number between 3 numbers
-    public static void Exercise2_8(){
+    public static void Exercise2_8() {
         Scanner input = new Scanner(System.in);
         System.out.print("Enter a number: ");
         int num1 = input.nextInt();
@@ -353,5 +353,80 @@ public class Exercises {
 //        // another option
 //        biggest = Math.max(num1, Math.max(num2,num3));
         System.out.println("The biggest number is: " + biggest);
+    }
+
+    // find armstrong numbers between 100-999
+    public static boolean Is_Armstrong_Number(int num) {
+        int hundreds = num / 100;
+        int tens = (num / 10) % 10;
+        int ones = num % 10;
+        if ((hundreds * hundreds * hundreds + tens * tens * tens + ones * ones * ones) == num) {
+            return true;
+        } else
+            return false;
+    }
+
+    public static void Armstrongs() {
+        for (int i = 100; i <= 999; i++) {
+            if (Is_Armstrong_Number(i)) {
+                System.out.println(i + " is an Armstrong number");
+            }
+        }
+    }
+
+    // Assembly of number with for loop
+    public static void Exercise3_1() {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int assembly = input.nextInt();
+        int counter = 1;
+        int sum = 1;
+        for (int i = 1; i <= assembly; i++) {
+            sum *= counter;
+            counter += 1;
+        }
+        System.out.println("The assembly of: " + assembly + " is: " + sum);
+    }
+
+    // print triangle with a size of a number
+    public static void Exercise3_2() {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter the size of the triangle: ");
+        int num = input.nextInt();
+        for (int i = 1; i <= num; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            System.out.println("");
+        }
+    }
+
+    // pow of 2 numbers with for loop
+    public static void Exercise3_3() {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int num1 = input.nextInt();
+        System.out.print("Enter the pow: ");
+        int num2 = input.nextInt();
+        int sum = 1;
+        for (int i=1; i<=num2; i++){
+            sum *= num1;
+        }
+        System.out.println(sum);
+    }
+
+    // fibonacci number
+    public static void Exercise3_4() {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int n = input.nextInt();
+        int firstTerm = 0, secondTerm = 1;
+        System.out.println("A reminder, max value of Integer is: " + Integer.MAX_VALUE);
+        for (int i = 1; i < n; ++i) {
+            int nextTerm = firstTerm + secondTerm;
+            firstTerm = secondTerm;
+            secondTerm = nextTerm;
+        }
+        System.out.println("Fibonacci number in place " + n + " is: " + firstTerm);
     }
 }

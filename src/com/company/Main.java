@@ -1,8 +1,5 @@
 package com.company;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Main {
 
 //    public static boolean is_prime_number(int num){
@@ -106,8 +103,12 @@ public class Main {
 //        Exercises.Exercise2_6();
 //        Exercises.Exercise2_7();
 //        Exercises.Exercise2_8();
-        Exercises.Exercise2_9();
-
+//        Exercises.Exercise2_9();
+//        Exercises.Armstrongs();
+//        Exercises.Exercise3_1();
+//        Exercises.Exercise3_2();
+//        Exercises.Exercise3_3();
+        Exercises.Exercise3_4();
 
 
 
