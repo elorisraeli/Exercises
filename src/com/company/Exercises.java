@@ -1,5 +1,6 @@
 package com.company;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Exercises {
@@ -471,14 +472,69 @@ public class Exercises {
         System.out.print("How many rows: ");
         int rows = input.nextInt();
         for (int y = 0; y <= rows; y++) {
-            for (int spaces=0; spaces<=y-1; spaces++){
+            for (int spaces = 0; spaces <= y - 1; spaces++) {
                 System.out.print(" ");
             }
-            for (int x=rows-y; x>=1; x--){
+            for (int x = rows - y; x >= 1; x--) {
                 System.out.print("*");
             }
-
             System.out.println();
         }
     }
+
+    // using switch case - even or not
+    public static void Exercise3_8() {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int num = input.nextInt();
+        switch (num) {
+            case 0, 2, 4, 6, 8, 10 -> System.out.println("The number is even");
+            case 1, 3, 5, 7, 9 -> System.out.println("The number is odd");
+            default -> System.out.println("Number is not in range");
+        }
+    }
+
+    // find if array is a symmetrical array
+    public static void Exercise4_1() {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter array size: ");
+        int N = input.nextInt();
+        int i;
+        int[] numbers = new int[N];
+        for (i = 0; i < N; i++) {
+            numbers[i] = input.nextInt();
+        }
+        i = 0;
+        while ((i < N/2) && (numbers[i] == numbers[N - 1 - i])) {
+            i++;
+        }
+        if (i == N/2) {
+            System.out.println("The array is a symmetrical array");
+        } else {
+            System.out.println("The array is NOT a symmetrical array");
+        }
+    }
+
+    // reverse the array
+    public static void Exercise4_2() {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter array size: ");
+        int N = input.nextInt();
+        int[] numbers = new int[N];
+        int[] helper = new int[N];
+        for (int i = 0; i < N; i++) {
+            System.out.print("Enter a number: ");
+            numbers[i] = input.nextInt();
+        }
+        System.out.println(Arrays.toString(numbers));
+        for (int i = 1; i <= N; i++) {
+            helper[N-i] = numbers[i-1];
+        }
+        System.out.println(Arrays.toString(helper));
+    }
+
+
+
+
 }
+
