@@ -409,7 +409,7 @@ public class Exercises {
         System.out.print("Enter the pow: ");
         int num2 = input.nextInt();
         int sum = 1;
-        for (int i=1; i<=num2; i++){
+        for (int i = 1; i <= num2; i++) {
             sum *= num1;
         }
         System.out.println(sum);
@@ -428,5 +428,57 @@ public class Exercises {
             secondTerm = nextTerm;
         }
         System.out.println("Fibonacci number in place " + n + " is: " + firstTerm);
+    }
+
+    // find the biggest number
+    public static void Exercise3_5() {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int n = input.nextInt();
+        int max = n;
+        for (int i = 0; i < n; i++) {
+            System.out.print("Enter a number: ");
+            int m = input.nextInt();
+            if (m > n) {
+                max = m;
+            }
+        }
+        System.out.println("The biggest number is: " + max);
+    }
+
+    // find perfect number
+    public static void Exercise3_6() {
+        int i, Number, Sum = 0;
+        Scanner input = new Scanner(System.in);
+        System.out.println("\n Please Enter any Number: ");
+        Number = input.nextInt();
+
+        for (i = 1; i < Number; i++) {
+            if (Number % i == 0) {
+                Sum = Sum + i;
+            }
+        }
+        if (Sum == Number) {
+            System.out.format("\n% d is a Perfect Number", Number);
+        } else {
+            System.out.format("\n% d is NOT a Perfect Number", Number);
+        }
+    }
+
+    // print a triangle by number of rows
+    public static void Exercise3_7() {
+        Scanner input = new Scanner(System.in);
+        System.out.print("How many rows: ");
+        int rows = input.nextInt();
+        for (int y = 0; y <= rows; y++) {
+            for (int spaces=0; spaces<=y-1; spaces++){
+                System.out.print(" ");
+            }
+            for (int x=rows-y; x>=1; x--){
+                System.out.print("*");
+            }
+
+            System.out.println();
+        }
     }
 }

@@ -108,7 +108,10 @@ public class Main {
 //        Exercises.Exercise3_1();
 //        Exercises.Exercise3_2();
 //        Exercises.Exercise3_3();
-        Exercises.Exercise3_4();
+//        Exercises.Exercise3_4();
+//        Exercises.Exercise3_5();
+//        Exercises.Exercise3_6();
+        Exercises.Exercise3_7();
 
 
 
