@@ -103,7 +103,11 @@ public class Main {
 //        Exercises.Exercise2_3();
 //        Exercises.Exercise2_4();
 //        Exercises.Exercise2_5();
-        Exercises.Exercise2_6();
+//        Exercises.Exercise2_6();
+//        Exercises.Exercise2_7();
+        Exercises.Exercise2_8();
+
+
 
 
     }

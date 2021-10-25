@@ -165,9 +165,9 @@ public class Exercises {
 
     // check if there are more fermat numbers whom correct
     public static void fermat_numbers() {
-        for (double i = 1.0; i <= Long.MAX_VALUE; i ++) {
+        for (double i = 1.0; i <= Long.MAX_VALUE; i++) {
             long fermat = (long) Math.pow(2.0, Math.pow(2.0, i)) + 1;
-            if ((fermat < Long.MAX_VALUE)&&(fermat > 0)) {
+            if ((fermat < Long.MAX_VALUE) && (fermat > 0)) {
                 System.out.println("In range, calculating: ");
                 if (is_prime_number(fermat)) {
                     System.out.println(i + " - A prime number, the number is: " + fermat);
@@ -178,7 +178,7 @@ public class Exercises {
         }
     }
 
-    public static void month_generator(){
+    public static void month_generator() {
         int month = MyConsole.readInt("Enter number of month: ");
         switch (month) {
             case 1 -> System.out.println("January");
@@ -198,14 +198,14 @@ public class Exercises {
     }
 
     //solve the function: a*x=b
-    public static void Exercise2_1(){
+    public static void Exercise2_1() {
         double a = MyConsole.readDouble("Enter a number to divide (b): ");
         double b = MyConsole.readDouble("Enter a divider (a): ");
-        if ((b==0) && (a==0)){
+        if ((b == 0) && (a == 0)) {
             System.out.println("Infinity solutions");
-        }else if (b == 0){
+        } else if (b == 0) {
             System.out.println("No solutions");
-        }else {
+        } else {
             double sum = a / b;
             System.out.println("The result of a*x=b is: " + sum);
         }
@@ -213,11 +213,11 @@ public class Exercises {
     }
 
     // count the numbers until the number and sum them
-    public static void Exercise2_2(){
+    public static void Exercise2_2() {
         int num = MyConsole.readInt("Enter a number bigger then zero: ");
         int counter = 0;
         int sum = 0;
-        while (counter<=num){
+        while (counter <= num) {
             sum += counter;
             counter += 1;
         }
@@ -225,13 +225,13 @@ public class Exercises {
     }
 
     // count the number of digits
-    public static void Exercise2_3(){
+    public static void Exercise2_3() {
         int num = MyConsole.readInt("Enter a number: ");
         int counter = 1;
-        while (true){
-            boolean is_bigger_then_zero = (num / 10)>0;
-            num = num/10;
-            if (!is_bigger_then_zero){
+        while (true) {
+            boolean is_bigger_then_zero = (num / 10) > 0;
+            num = num / 10;
+            if (!is_bigger_then_zero) {
                 break;
             }
             counter += 1;
@@ -240,16 +240,16 @@ public class Exercises {
     }
 
     // count the zero digits of the number
-    public static void Exercise2_4(){
+    public static void Exercise2_4() {
         int num = MyConsole.readInt("Enter a number: ");
         int zeros = 0;
-        while (true){
-            boolean is_bigger_then_zero = (num / 10)>0;
-            if (num%10 == 0){
+        while (true) {
+            boolean is_bigger_then_zero = (num / 10) > 0;
+            if (num % 10 == 0) {
                 zeros += 1;
             }
-            num = num/10;
-            if (!is_bigger_then_zero){
+            num = num / 10;
+            if (!is_bigger_then_zero) {
                 break;
             }
         }
@@ -258,11 +258,11 @@ public class Exercises {
     }
 
     // Assembly of number
-    public static void Exercise2_5(){
+    public static void Exercise2_5() {
         int assembly = MyConsole.readInt("Enter a number to assembly: ");
         int counter = 1;
         int sum = 1;
-        while (counter<=assembly){
+        while (counter <= assembly) {
             sum *= counter;
             counter += 1;
         }
@@ -270,11 +270,11 @@ public class Exercises {
     }
 
     // Pow of numbers
-    public static void Exercise2_6(){
+    public static void Exercise2_6() {
         int m = MyConsole.readInt("Enter a number to pow : ");
         int n = MyConsole.readInt("Enter the pow number: ");
         int sum = m;
-        while (n>=2){
+        while (n >= 2) {
             sum *= m;
             n -= 1;
         }
@@ -282,9 +282,49 @@ public class Exercises {
     }
 
     // Find the lower same divider of 2 numbers
-    public static void Exercise2_7(){
-        int num1 = MyConsole.readInt("Enter a number: ");
-        int num2 = MyConsole.readInt("Enter another number: ");
+    public static void Exercise2_7() {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int num1 = input.nextInt();
+        System.out.print("Enter another number: ");
+        int num2 = input.nextInt();
+
+        int biggest_divider = 0;
+        int counter = 0;
+        while (counter <= (num1 / 2) && counter <= (num2 / 2)) {
+            counter += 1;
+            if ((num1 % counter == 0) && (num2 % counter == 0) && (counter > biggest_divider)) {
+                biggest_divider = counter;
+            }
+        }
+        System.out.println("The biggest divisor of the 2 numbers is: " + biggest_divider);
+    }
+
+    // smallest number between 3 numbers
+    public static void Exercise2_8() {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int num1 = input.nextInt();
+        System.out.print("Enter the second number: ");
+        int num2 = input.nextInt();
+        System.out.print("Enter the third number: ");
+        int num3 = input.nextInt();
+        int biggest;
+        if (num1 > num2) {
+            if (num1 > num3) {
+                biggest = num1;
+            } else {
+                biggest = num3;
+            }
+        } else if (num2 > num3) {
+            biggest = num2;
+        } else {
+            biggest = num3;
+        }
+
+//        // another option
+//        biggest = Math.max(num1, Math.max(num2,num3));
+        System.out.println("The biggest number is: " + biggest);
 
     }
 
