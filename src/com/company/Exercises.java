@@ -301,7 +301,35 @@ public class Exercises {
     }
 
     // smallest number between 3 numbers
-    public static void Exercise2_8() {
+    public static void Exercise2_8(){
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int num1 = input.nextInt();
+        System.out.print("Enter the second number: ");
+        int num2 = input.nextInt();
+        System.out.print("Enter the third number: ");
+        int num3 = input.nextInt();
+        int biggest;
+        if (num1 < num2) {
+            if (num1 < num3) {
+                biggest = num1;
+            } else {
+                biggest = num3;
+            }
+        } else if (num2 < num3) {
+            biggest = num2;
+        } else {
+            biggest = num3;
+        }
+
+//        // another option
+//        biggest = Math.min(num1, Math.min(num2,num3));
+        System.out.println("The biggest number is: " + biggest);
+    }
+
+
+    // biggest number between 3 numbers
+    public static void Exercise2_9() {
         Scanner input = new Scanner(System.in);
         System.out.print("Enter a number: ");
         int num1 = input.nextInt();
@@ -325,8 +353,5 @@ public class Exercises {
 //        // another option
 //        biggest = Math.max(num1, Math.max(num2,num3));
         System.out.println("The biggest number is: " + biggest);
-
     }
-
-
 }
