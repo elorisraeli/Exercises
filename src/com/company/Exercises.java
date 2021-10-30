@@ -533,8 +533,23 @@ public class Exercises {
         System.out.println(Arrays.toString(helper));
     }
 
+    // median
+    public static void Exercise4_3() {
 
+    }
 
-
+    // (x^3-2)/(x+2) ∈ Z
+    // (Numerator = מונה, denominator = מכנה)
+    public static void Torata_Exercise4(){
+        for (int i=-1000; i<1000; i++){
+            double numerator = Math.pow(i, 3) - 2;
+            double denominator = i + 2;
+            double result_double = (numerator/denominator);
+            int result_int = (int) (numerator/denominator);
+            if (result_double == result_int){
+                System.out.println("The number: " + i + " -> (x^3-2)/(x+2) ∈ Z " + "result=" + result_double);
+            }
+        }
+    }
 }
 
