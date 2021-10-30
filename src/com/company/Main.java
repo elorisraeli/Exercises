@@ -1,5 +1,9 @@
 package com.company;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
 public class Main {
 
 //    public static boolean is_prime_number(int num){
@@ -18,7 +22,7 @@ public class Main {
 //    // print all the prime numbers from input number with difference of input space
 //    // example: input number = 20, input space = 4, will print 3,7 | 7,11 | 13,17
 //    public static void prime_spaces(int num, int space){
-//        List<Integer>primes = new ArrayList<>();
+//        List<Integer> primes = new ArrayList<>();
 //        for (int x = 2; x <= num; x++){
 //            if (is_prime_number(x)){
 //                primes.add(x);
@@ -38,8 +42,8 @@ public class Main {
 
 
     public static void main(String[] args) {
-	// write your code here
-        // Exercise 1:
+//	    // write your code here
+//        // Exercise 1:
 //        Scanner input = new Scanner(System.in);
 //        System.out.print("Enter a number: ");
 //        int number = input.nextInt();
@@ -74,6 +78,7 @@ public class Main {
 //        }
 //        prime_spaces(20, 4);
 
+        EX1_A.EX1_A();
 
 //        Exercises.exercise1();
 //        Exercises.exercise2();
@@ -114,8 +119,8 @@ public class Main {
 //        Exercises.Exercise3_7();
 //        Exercises.Exercise3_8();
 //        Exercises.Exercise4_1();
-        Exercises.Exercise4_2();
-
+//        Exercises.Exercise4_2();
+//        Exercises.Torata_Exercise4();
 
 
     }
