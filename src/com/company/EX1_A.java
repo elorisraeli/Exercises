@@ -38,6 +38,7 @@ public class EX1_A {
     }
 
     // the function you will use in main to ask the numbers from user:
+    // help: go to "Main.java" -> between main {....} enter the line:  EX1_A.EX1_A();
     public static void EX1_A(){
         System.out.println("The program will check the spaces (m) between prime numbers until a number (n)");
         int n = MyConsole.readInt("Enter a number to see all prime numbers below him (n): ");

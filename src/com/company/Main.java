@@ -78,8 +78,6 @@ public class Main {
 //        }
 //        prime_spaces(20, 4);
 
-        EX1_A.EX1_A();
-
 //        Exercises.exercise1();
 //        Exercises.exercise2();
 //        Exercises.exercise3();
@@ -121,7 +119,7 @@ public class Main {
 //        Exercises.Exercise4_1();
 //        Exercises.Exercise4_2();
 //        Exercises.Torata_Exercise4();
-
-
+//        EX1_A.EX1_A();
+        EX1_B.EX1_B();
     }
 }
