@@ -120,9 +120,9 @@ public class Main {
 //        Exercises.Exercise4_2();
 //        Exercises.Torata_Exercise4();
 //        EX1_A.EX1_A();
-//        EX1_B.EX1_B();
+        EX1_B.EX1_B();
 //        EX1_A_option2.EX1_A_o2();
 //        Class_Practice.arrays();
-        EX1_B_fixed.EX1_B();
+//        EX1_B_fixed.EX1_B();
     }
 }
