@@ -1,4 +1,4 @@
-package com.company;
+package com.company.main;
 
 /**
  * An easy interface to read numbers and strings from
