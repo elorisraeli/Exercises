@@ -1,4 +1,6 @@
-package com.company;
+package com.company.Ex1;
+
+import com.company.main.MyConsole;
 
 public class EX1_B_fixed {
     // the function you will use in main to ask the numbers from user:

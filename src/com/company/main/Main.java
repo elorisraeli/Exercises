@@ -122,6 +122,7 @@ public class Main {
 //        EX1_B_fixed.EX1_B();
 //        EX1_A_option2.EX1_A_o2();
 //        Euclid.euclid_toString();
-        Euclid.euclid_expand();
+//        Euclid.euclid_expand();
+//        System.out.println("Elor is using his Ipad Pro to code right now!! Its amazing!!!");
     }
 }

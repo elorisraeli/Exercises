@@ -1,17 +1,20 @@
-package com.company;
+package com.company.Ex1;
+
+import com.company.main.MyConsole;
 
 public class EX1_B {
-    // the function you will use in main to ask the numbers from user:
-    // help to tester: go to "Main.java" -> between main {....} enter the line:  EX1_B.EX1_B();
-    public static void EX1_B() {
+    // Driver Program - Create main in class
+    public static void main(String[] args) {
         boolean isGoAgain = true;
         while (isGoAgain) {
             int num = MyConsole.readInt("enter a number: 0) exit, 1) aX^2+bX+c=0 ");
             switch (num) {
+                // User want to exit
                 case 0 -> {
                     System.out.println("done!");
                     isGoAgain = false;
                 }
+                // User want to keep use the program
                 case 1 -> {
                     double a = MyConsole.readDouble("Enter a: ");
                     double b = MyConsole.readDouble("Enter b: ");
